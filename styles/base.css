@@ -1,0 +1,238 @@
+/* ------------ COLOR SCHEME ---------------
+terra cotta #E07A5F
+deep slate blue #3D405B,
+*/
+
+/* ******* SITE WIDE ******************************/
+
+* {
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+  background: #f5f9f4;
+}
+
+
+/*************** HEADER *********************************/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 10px 0 10px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+    
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.5rem;
+    color: darkolivegreen;
+    font-weight: 300;
+}
+
+/* ******* HAMBURGER NAVIGATION *****************/
+.hamburger {
+    background: none;
+    border: none;
+    color: darkolivegreen;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+/*************** NAVIGATION ******************************/
+nav {
+    background-color: darkolivegreen;
+    color: whitesmoke
+}
+
+.navigation {
+    display: none
+}
+
+.navigation.show{
+    display: block
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.25rem;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd
+}
+
+.navigation li.current {
+    background-color: olivedrab;
+}
+
+.navigation a:hover {
+    background-color: darkkhaki; 
+}
+
+.home-heading {
+    margin-left: 10px;
+}
+
+
+
+/*************** MAIN CONTENT ***************************/
+
+section {
+  background: #fff;
+  padding: 0;
+  margin-bottom: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08); 
+  overflow: hidden; 
+}
+section h3 {
+  background: darkolivegreen; /* Deep Blue */
+  color: #fff;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.about p {
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* === PHOTO === */
+.photo img {
+  width: 100%;
+  display: block; 
+  object-fit: cover;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+
+}
+
+/* === COURSES === */
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+.buttons button {
+  background: darkolivegreen;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  flex-grow: 1;
+}
+.buttons button:hover { background: darkkhaki; }
+
+#courseList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 1rem 1rem; 
+}
+.course{
+  background: #feffe0;
+  border-left: 6px solid darkolivegreen;
+  padding: 0.8rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.course strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: darkolivegreen;
+}
+.course em {
+  display: block;
+  font-style: normal;
+  font-size: 0.9rem;
+}
+.course small {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  color: #555;
+}
+.course.completed {
+  background: #e6fae8; /* Very light green background */
+  border-left-color: darkolivegreen; /* Emerald Green */
+}
+#creditTotal {
+    text-align: right;
+    padding: 0 1rem 1rem;
+    font-weight: 600;
+    color: darkolivegreen;
+    text-align: center;
+}
+
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+
+}
+
+.social a:hover {
+    background-color: darkkhaki;
+
+}
+
+
+/*************** FOOTER ******************************/
+
+footer {
+
+    background-color: darkolivegreen;
+    padding: 1rem 2px;
+    text-align: center;
+    color: whitesmoke;
+}

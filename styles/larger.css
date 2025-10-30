@@ -1,0 +1,93 @@
+@media only screen and (min-width: 38rem) {
+    header, main, nav, footer, .home-heading {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+    display: block;
+    border-bottom: solid 1px #eee;
+    }
+    
+
+    .navigation ul {
+    display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+
+    /* MAIN GRID LAYOUT */
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr; 
+        gap: 1.5rem;
+   
+    }
+    .about {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .photo {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    .photo img {
+        height: 300px; 
+        object-fit: contain;
+    }
+
+    .courses {
+        grid-column: span 2; 
+        margin-top: 0.5rem; 
+    }
+
+    .courses h3 {
+        font-size: 1.2rem; 
+    }
+
+    /* Course filter buttons */
+    .buttons {
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .buttons button {
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem;
+        min-width: 100px; 
+    }
+
+    #courseList {
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+        gap: 1rem;
+        padding: 0 1rem 1.5rem; 
+    }
+    .course {
+        border-radius: 8px; 
+    }
+
+    #creditTotal {
+        padding-right: 1rem;
+        text-align: center;
+    }
+
+    /* FOOTER */
+    footer {
+        grid-column: span 2;
+        padding: 1.5rem 2rem;
+    }
+
+}
+
