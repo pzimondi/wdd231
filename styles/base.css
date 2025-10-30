@@ -95,7 +95,7 @@ nav {
     background-color: darkkhaki; 
 }
 
-.home-heading {
+main h1 {
     margin-left: 10px;
 }
 
@@ -111,7 +111,7 @@ section {
   box-shadow: 0 4px 10px rgba(0,0,0,0.08); 
   overflow: hidden; 
 }
-section h3 {
+section h2 {
   background: darkolivegreen; /* Deep Blue */
   color: #fff;
   text-align: center;
