@@ -4,26 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Primary Meta Tags -->
     <title>Business Directory | Harare Chamber of Commerce</title>
     <meta name="description" content="Explore member businesses of the Harare Chamber of Commerce. Connect with local enterprises, discover services, and support economic growth in Harare, Zimbabwe.">
     <meta name="author" content="Pastor Munashe Zimondi">
     
-    <!-- Open Graph / Facebook Meta Tags -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pzimondi.github.io/wdd231/chamber/directory.html">
     <meta property="og:title" content="Business Directory | Harare Chamber of Commerce">
-    <meta property="og:description" content="Explore member businesses of the Harare Chamber of Commerce. Connect with local enterprises and support economic growth in Harare.">
-    <meta property="og:image" content="https://pzimondi.github.io/wdd231/chamber/images/harare-chamber-og.png">
+    <meta property="og:description" content="Explore member businesses of the Harare Chamber of Commerce. Connect with local enterprises, discover services, and support economic growth in Harare, Zimbabwe.">
+    <meta property="og:image" content="https://pzimondi.github.io/wdd231/chamber/images/harare-chamber-og.jpg">
+    <meta property="og:url" content="https://pzimondi.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Harare Chamber of Commerce">
     
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     
-    <!-- CSS Files -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
+
 </head>
 <body>
-    
+    <header>
+        <div class="logo-container">
+            <div>
+                <img src="images/logo.svg" alt="Harare Chamber of Commerce Logo" class="logo">
+                <span class="site-title"><h1>Harare Chamber of Commerce</h1></span>
+            </div>
+            
+            <nav>
+                <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Member Directory</h2>
+        
+        <div class="menu">
+            <button id="grid">⊞ Grid</button>
+            <button id="list">☰ List</button>
+        </div>
+
+        <article id="members-display" class="grid">
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Harare Chamber of Commerce</h3>
+                <p class="address">
+                    123 Nelson Mandela Avenue<br>
+                    Harare, Zimbabwe
+                </p>
+                <p class="email">Email: info@hararechamber.co.zw</p>
+                <p class="phone">Phone: +263 4 270 1000</p>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Youtube">
+                    <img src="images/youtube.svg" alt="Youtube" class="social-icon">
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+                    <img src="images/twitter-x.svg" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn" class="social-icon">
+                </a>
+            </div>
+
+            <div class="dev-info">
+                <p class="project-title">WDD 231 - Web Frontend Development</p>
+                <p class="author">Pastor Munashe Zimondi</p>
+                <p class="copyright">&copy; <span id="currentYear"></span> Harare Chamber of Commerce</p>
+                <p class="last-modified">Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
 </body>
 </html>
