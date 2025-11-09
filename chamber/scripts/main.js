@@ -1,6 +1,3 @@
-// main.js - Harare Chamber of Commerce
-// Pastor Munashe Zimondi - WDD 231
-// Modern Enhanced Version
 
 // ==========================================
 // FOOTER: Dynamic Year and Last Modified
