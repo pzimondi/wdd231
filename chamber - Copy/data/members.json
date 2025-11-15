@@ -1,0 +1,88 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "name": "Delta Corporation",
+      "address": "15 Borrowdale Road, Borrowdale, Harare",
+      "phone": "+263 4 886 611",
+      "website": "https://www.deltabrands.co.zw",
+      "image": "images/delta-logo.png",
+      "membershipLevel": 3,
+      "description": "Leading beverage and hospitality company in Zimbabwe",
+      "industry": "Beverages & Hospitality",
+      "yearJoined": 2015
+    },
+    {
+      "id": 2,
+      "name": "Econet Wireless Zimbabwe",
+      "address": "Econet Park, 2 Fairbridge Avenue, Harare",
+      "phone": "+263 242 338 000",
+      "website": "https://www.econet.co.zw",
+      "image": "images/econet-logo.png",
+      "membershipLevel": 3,
+      "description": "Zimbabwe's leading mobile telecommunications company",
+      "industry": "Telecommunications",
+      "yearJoined": 2010
+    },
+    {
+      "id": 3,
+      "name": "Zimre Holdings",
+      "address": "Zimre Centre, 150 Herbert Chitepo Avenue, Harare",
+      "phone": "+263 4 700 890",
+      "website": "https://www.zimre.co.zw",
+      "image": "images/zimre-logo.png",
+      "membershipLevel": 2,
+      "description": "A diversified financial and property investment group",
+      "industry": "Financial Services & Property",
+      "yearJoined": 2016
+    },
+    {
+      "id": 4,
+      "name": "Meikles Hotel",
+      "address": "Corner Jason Moyo & Third Street, Harare",
+      "phone": "+263 4 707 721",
+      "website": "https://www.meikleshotel.com",
+      "image": "images/meikles-logo.png",
+      "membershipLevel": 3,
+      "description": "A historic and premier luxury hotel in Harare",
+      "industry": "Hospitality",
+      "yearJoined": 2005
+    },
+    {
+      "id": 5,
+      "name": "CBZ Holdings",
+      "address": "CBZ Building, 55 Jason Moyo Avenue, Harare",
+      "phone": "+263 4 748 050",
+      "website": "https://www.cbz.co.zw",
+      "image": "images/cbz-logo.png",
+      "membershipLevel": 2,
+      "description": "A financial institution providing banking and insurance services",
+      "industry": "Banking & Finance",
+      "yearJoined": 2019
+    },
+    {
+      "id": 6,
+      "name": "TM Supermarkets",
+      "address": "1st Floor, TM Head Office, 11th Street, Harare",
+      "phone": "+263 4 772 000",
+      "website": "https://www.tm-supermarkets.co.zw",
+      "image": "images/tm-logo.png",
+      "membershipLevel": 1,
+      "description": "A large chain of supermarkets across Zimbabwe",
+      "industry": "Retail & Supermarkets",
+      "yearJoined": 2021
+    },
+    {
+      "id": 7,
+      "name": "Rainbow Tourism Group",
+      "address": "Rainbow Towers, 54-56 Park Lane, Harare",
+      "phone": "+263 4 250 8405",
+      "website": "https://www.rtg.co.zw",
+      "image": "images/rainbow-logo.png",
+      "membershipLevel": 2,
+      "description": "Leading hospitality and tourism company",
+      "industry": "Tourism & Hospitality",
+      "yearJoined": 2017
+    }
+  ]
+}

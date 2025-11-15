@@ -1,0 +1,513 @@
+/* ==========================================
+   INDEX/HOME PAGE SPECIFIC STYLES
+   File: styles/index.css
+   ========================================== */
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 250px;
+    background: linear-gradient(rgba(26, 58, 92, 0.7), rgba(26, 58, 92, 0.8)),
+                url('../images/hero.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 2rem;
+    color: #ffffff;
+    animation: fadeInUp 1s ease;
+}
+
+.hero-content h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Call to Action Button */
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+    color: #ffffff;
+    padding: 0.875rem 2rem;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    color: #ffffff;
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
+    background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+}
+
+/* Main Content Grid Container for Desktop */
+.main-content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Events Section */
+.events {
+    margin-bottom: 2rem;
+}
+
+.events h2 {
+    text-align: left;
+    background: linear-gradient(135deg, var(--primary-color), #2d5a7b);
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 1.25rem;
+    font-family: var(--font-primary);
+    font-weight: 500;
+}
+
+.event-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    background: var(--surface-color);
+    padding: 3rem;
+    border-radius: 0 0 var(--radius) var(--radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.event-card {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    border-left: none;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+.event-card:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.event-card:hover {
+    transform: none;
+    box-shadow: none;
+    border-left-color: transparent;
+}
+
+.event-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.event-date {
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.event-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.event-link:hover {
+    color: var(--accent-color);
+    transform: translateX(5px);
+}
+
+/* Weather Section - Separate Current and Forecast */
+.weather {
+    background: var(--surface-color);
+    padding: 0;
+    border-radius: 0 0 var(--radius) var(--radius);
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.weather h2 {
+    color: #ffffff;
+    text-align: left;
+    background: linear-gradient(135deg, var(--primary-color), #2d5a7b);
+    margin-bottom: 0;
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    border-radius: 0;
+}
+
+/* Separate Forecast Section */
+.forecast-section {
+    background: var(--surface-color);
+    padding: 0;
+    border-radius: 0 0 var(--radius) var(--radius);
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.weather-content {
+    display: grid;
+    gap: 0;
+    padding: 1.5rem;
+}
+
+.current-weather {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    margin-bottom: 1.5rem;
+}
+
+#weather-icon {
+    font-size: 3.5rem;
+}
+
+.weather-info {
+    text-align: left;
+}
+
+.temperature {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.description {
+    font-size: 1rem;
+    color: var(--text-color);
+    text-transform: capitalize;
+    margin: 0.25rem 0;
+}
+
+.weather-info p {
+    margin: 0.15rem 0;
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+.forecast h3 {
+    color: #ffffff;
+    margin-bottom: 0;
+    text-align: left;
+    background: linear-gradient(135deg, var(--primary-color), #2d5a7b);;
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+    font-family: var(--font-primary);
+    font-weight: 500;
+}
+
+.forecast-title {
+    color: #ffffff;
+    margin-bottom: 0;
+    text-align: left;
+    background: linear-gradient(135deg, var(--primary-color), #2d5a7b);
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+    font-family: var(--font-primary);
+    font-weight: 500;
+}
+
+.forecast-days {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 1.5rem;
+    background: var(--surface-color);
+}
+
+.forecast-day {
+    background: transparent;
+    padding: 0.5rem 0;
+    border-radius: 0;
+    text-align: left;
+    box-shadow: none;
+}
+
+.forecast-date {
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0;
+    font-size: 1rem;
+    display: inline;
+}
+
+.forecast-temp {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 0;
+    display: inline;
+    margin-left: 0.5rem;
+}
+
+/* Spotlights Section */
+.spotlights {
+    margin-bottom: 2rem;
+}
+
+.spotlights h2 {
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary-color), #2d5a7b);
+    color: #ffffff;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 1.25rem;
+}
+
+.spotlights-subtitle {
+    text-align: center;
+    color: var(--text-light);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.spotlight-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.spotlight-card {
+    background: var(--surface-color);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.spotlight-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+    border-color: var(--secondary-color);
+}
+
+.spotlight-card.gold {
+    background: linear-gradient(135deg, #fffbf0, #ffffff);
+    border-color: var(--gold-color);
+}
+
+.spotlight-card.silver {
+    background: linear-gradient(135deg, #f8f9fa, #ffffff);
+    border-color: var(--silver-color);
+}
+
+.spotlight-card img {
+    width: auto;
+    height: 120px;
+    max-width: 100%;
+    object-fit: contain;
+    margin: 0 auto 1rem;
+    padding: 0.5rem;
+    background: var(--background-color);
+    border-radius: 8px;
+}
+
+.spotlight-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.spotlight-info {
+    margin: 1rem 0;
+    color: var(--text-color);
+}
+
+.spotlight-info p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.spotlight-card .membership-badge {
+    margin: 1rem 0;
+}
+
+.spotlight-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 2rem;
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+    color: #ffffff;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
+}
+
+.spotlight-card a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.5);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================================
+   RESPONSIVE - MOBILE (<640px)
+   ========================================== */
+@media screen and (max-width: 639px) {
+    .hero {
+        height: 300px;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 0.95rem;
+        padding: 0.875rem 2rem;
+    }
+
+    .event-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .weather-content {
+        grid-template-columns: 1fr;
+    }
+
+    .forecast-days {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+    }
+
+    .forecast-day {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .forecast-temp {
+        font-size: 1.25rem;
+    }
+
+    .spotlight-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE - TABLET (640px+)
+   ========================================== */
+@media screen and (min-width: 640px) {
+    .hero {
+        height: 450px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .event-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .spotlight-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .forecast-days {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ==========================================
+   RESPONSIVE - DESKTOP (768px+)
+   ========================================== */
+@media screen and (min-width: 768px) {
+    .hero {
+        height: 500px;
+    }
+
+    .hero-content h2 {
+        font-size: 3rem;
+    }
+
+    /* Three-column layout for Events, Current Weather, and Forecast */
+    .main-content-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Remove individual margins when in grid */
+    .events,
+    .weather,
+    .forecast-section {
+        margin-bottom: 0;
+    }
+
+    .weather-content {
+        grid-template-columns: 1fr;
+    }
+
+    /* Hide the forecast inside weather section on desktop */
+    .weather .forecast {
+        display: none;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE - LARGE (1024px+)
+   ========================================== */
+@media screen and (min-width: 1024px) {
+    .event-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .spotlight-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

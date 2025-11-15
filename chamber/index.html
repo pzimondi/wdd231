@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Home | Harare Chamber of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500;700&display=swap">
+
+    <meta name="description" content="Welcome to the Harare Chamber of Commerce. Connect with local businesses, discover opportunities, and support economic growth in Harare, Zimbabwe.">
+    <meta name="author" content="Pastor Munashe Zimondi">
+    
+    <meta property="og:title" content="Home | Harare Chamber of Commerce">
+    <meta property="og:description" content="Welcome to the Harare Chamber of Commerce. Connect with local businesses, discover opportunities, and support economic growth in Harare, Zimbabwe.">
+    <meta property="og:image" content="https://pzimondi.github.io/wdd231/chamber/images/harare-chamber-og.jpg">
+    <meta property="og:url" content="https://pzimondi.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Harare Chamber of Commerce">
+    
+    <link rel="icon" href="images/favicon.ico">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/index.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div>
+                <img src="images/logo.svg" alt="Harare Chamber of Commerce Logo" class="logo">
+                <span class="site-title"><h1>Harare Chamber of Commerce</h1></span>
+            </div>
+            
+            <nav>
+                <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+                <ul class="navigation">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section with Call to Action -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Building Business. Building Community.</h2>
+                <p>Join the leading business organization in Harare and unlock opportunities for growth, networking, and success.</p>
+                <a href="join.html" class="cta-button">Join the Chamber Today</a>
+            </div>
+        </section>
+
+        <!-- Three Column Grid: Events, Current Weather, Weather Forecast -->
+        <div class="main-content-grid">
+            <!-- Current Events Section -->
+            <section class="events">
+                <h2>Events</h2>
+                <div class="event-cards">
+                    <article class="event-card">
+                        <h3>Annual Business Expo 2025</h3>
+                        <p class="event-date">📆 January 15, 2025</p>
+                        <p>Connect with over 200 businesses and explore new opportunities at Harare's premier business exhibition.</p>
+                    </article>
+                    <article class="event-card">
+                        <h3>Networking Breakfast</h3>
+                        <p class="event-date">📆 December 5, 2025</p>
+                        <p>Start your day with fellow business leaders. Share insights, build connections, and grow your network.</p>
+                    </article>
+                    <article class="event-card">
+                        <h3>Digital Marketing Workshop</h3>
+                        <p class="event-date">📆 December 12, 2025</p>
+                        <p>Master the latest digital marketing strategies to reach more customers and grow your online presence.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Current Weather Section -->
+            <section class="weather">
+                <h2>Current Weather</h2>
+                <div class="weather-content">
+                    <div class="current-weather">
+                        <div id="weather-icon"></div>
+                        <div class="weather-info">
+                            <p class="temperature" id="current-temp">--°F</p>
+                            <p class="description" id="weather-desc">Loading weather data...</p>
+                            <p id="weather-high">High: --°</p>
+                            <p id="weather-low">Low: --°</p>
+                            <p id="weather-humidity">Humidity: --%</p>
+                            <p id="weather-sunrise">Sunrise: --</p>
+                            <p id="weather-sunset">Sunset: --</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Weather Forecast Section (Separate) -->
+            <section class="forecast-section">
+                <h3 class="forecast-title">Weather Forecast</h3>
+                <div class="forecast-days" id="forecast-container">
+                    <div class="forecast-day">
+                        <p class="forecast-date">Loading...</p>
+                        <p class="forecast-temp">--°F</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p class="forecast-date">Loading...</p>
+                        <p class="forecast-temp">--°F</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p class="forecast-date">Loading...</p>
+                        <p class="forecast-temp">--°F</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Company Spotlights Section -->
+        <section class="spotlights">
+            <h2>⭐ Member Spotlights</h2>
+            <p class="spotlights-subtitle">Featured Gold & Silver Members</p>
+            <div id="spotlight-container" class="spotlight-cards">
+                <div class="loading">⏳ Loading member spotlights...</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Harare Chamber of Commerce</h3>
+                <p class="address">
+                    123 Nelson Mandela Avenue<br>
+                    Harare, Zimbabwe
+                </p>
+                <p class="email">Email: info@hararechamber.co.zw</p>
+                <p class="phone">Phone: +263 4 270 1000</p>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Youtube">
+                    <img src="images/youtube.svg" alt="Youtube" class="social-icon">
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+                    <img src="images/twitter-x.svg" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn" class="social-icon">
+                </a>
+            </div>
+
+            <div class="dev-info">
+                <p class="project-title">WDD 231 - Web Frontend Development</p>
+                <p class="author">Pastor Munashe Zimondi</p>
+                <p class="copyright">&copy; <span id="currentYear"></span> Harare Chamber of Commerce</p>
+                <p class="last-modified">Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
