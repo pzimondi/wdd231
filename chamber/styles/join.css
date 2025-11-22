@@ -1,0 +1,350 @@
+/* ==========================================
+   JOIN PAGE SPECIFIC STYLES
+   File: styles/join.css
+   ========================================== */
+
+/* Join Container - Mobile First */
+.join-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* ==========================================
+   APPLICATION FORM SECTION
+   ========================================== */
+.application-form {
+    background: var(--surface-color);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.application-form h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.application-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.application-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    color: var(--text-color);
+    gap: 0.5rem;
+}
+
+.application-form input,
+.application-form select,
+.application-form textarea {
+    padding: 0.875rem;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: var(--font-primary);
+    transition: all 0.3s ease;
+    background-color: var(--background-color);
+}
+
+.application-form input:focus,
+.application-form select:focus,
+.application-form textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+.application-form input:invalid:not(:placeholder-shown),
+.application-form select:invalid:not(:placeholder-shown) {
+    border-color: #dc3545;
+}
+
+.application-form input:valid,
+.application-form select:valid {
+    border-color: #28a745;
+}
+
+.application-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.application-form button[type="submit"] {
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+    margin-top: 1rem;
+}
+
+.application-form button[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
+}
+
+/* ==========================================
+   MEMBERSHIP LEVELS SECTION
+   ========================================== */
+.membership-levels {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.membership-levels h3 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Membership Cards with Animation */
+.membership-card {
+    background: var(--surface-color);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 3px solid transparent;
+    transition: all 0.4s ease;
+    opacity: 0;
+    animation: slideInRight 0.6s ease forwards;
+}
+
+/* Staggered animation delays */
+.np-card {
+    animation-delay: 0.1s;
+    border-color: var(--member-color);
+}
+
+.bronze-card {
+    animation-delay: 0.2s;
+    border-color: #cd7f32;
+}
+
+.silver-card {
+    animation-delay: 0.3s;
+    border-color: var(--silver-color);
+}
+
+.gold-card {
+    animation-delay: 0.4s;
+    border-color: var(--gold-color);
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.membership-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+.membership-card h4 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.membership-card .price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin: 1rem 0;
+}
+
+.membership-card .description {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.membership-card .learn-more {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: linear-gradient(135deg, var(--primary-color), #2d5a7b);
+    color: #ffffff;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.membership-card .learn-more:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(26, 58, 92, 0.4);
+    background: linear-gradient(135deg, #2d5a7b, var(--primary-color));
+}
+
+/* ==========================================
+   MODAL STYLES
+   ========================================== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    background-color: var(--surface-color);
+    margin: 5% auto;
+    padding: 2rem;
+    border-radius: var(--radius);
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    animation: slideDown 0.4s ease;
+    position: relative;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.modal-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.modal-content ul li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.modal-content ul li:last-child {
+    border-bottom: none;
+}
+
+.modal-note {
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.close {
+    color: var(--text-light);
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--secondary-color);
+    transform: rotate(90deg);
+}
+
+/* ==========================================
+   RESPONSIVE - TABLET (640px+)
+   ========================================== */
+@media screen and (min-width: 640px) {
+    .application-form {
+        padding: 2.5rem;
+    }
+
+    .membership-levels {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .membership-levels h3 {
+        grid-column: 1 / -1;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE - DESKTOP (768px+)
+   ========================================== */
+@media screen and (min-width: 768px) {
+    .join-container {
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
+
+    .membership-levels {
+        grid-template-columns: 1fr;
+    }
+
+    .membership-levels h3 {
+        grid-column: auto;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE - LARGE (1024px+)
+   ========================================== */
+@media screen and (min-width: 1024px) {
+    .application-form {
+        padding: 3rem;
+    }
+
+    .modal-content {
+        margin: 10% auto;
+        padding: 3rem;
+    }
+}

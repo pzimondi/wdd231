@@ -4,42 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Business Directory | Harare Chamber of Commerce</title>
+    <title>Application Received | Harare Chamber of Commerce</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500;700&display=swap">
 
-    <meta name="description" content="Explore member businesses of the Harare Chamber of Commerce. Connect with local enterprises, discover services, and support economic growth in Harare, Zimbabwe.">
+    <meta name="description" content="Thank you for applying to join the Harare Chamber of Commerce. We've received your application.">
     <meta name="author" content="Pastor Munashe Zimondi">
-    
-    <meta property="og:title" content="Business Directory | Harare Chamber of Commerce">
-    <meta property="og:description" content="Explore member businesses of the Harare Chamber of Commerce. Connect with local enterprises, discover services, and support economic growth in Harare, Zimbabwe.">
-    <meta property="og:image" content="https://pzimondi.github.io/wdd231/chamber/images/harare-chamber-og.jpg">
-    <meta property="og:url" content="https://pzimondi.github.io/wdd231/chamber/directory.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:site_name" content="Harare Chamber of Commerce">
     
     <link rel="icon" href="images/favicon.ico">
     
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/directory.css">
-
+    <link rel="stylesheet" href="styles/thankyou.css">
 </head>
 <body>
     <header>
         <div class="logo-container">
             <div>
                 <img src="images/logo.svg" alt="Harare Chamber of Commerce Logo" class="logo">
-                <h1 class="site-title">Harare Chamber of Commerce</h1>
+                <div class="site-title">
+                    <h1>Harare Chamber of Commerce</h1>
+                </div>
             </div>
             
             <nav>
                 <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
                 <ul class="navigation">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
                     <li><a href="discover.html">Discover</a></li>
                 </ul>
@@ -48,15 +41,50 @@
     </header>
 
     <main>
-        <h2>Member Directory</h2>
-        
-        <div class="menu">
-            <button id="grid">⊞ Grid</button>
-            <button id="list">☰ List</button>
-        </div>
+        <div class="thankyou-container">
+            <div class="success-icon">✓</div>
+            <h2>Application Received!</h2>
+            <p class="thankyou-message">Thank you for your interest in joining the Harare Chamber of Commerce. We have successfully received your membership application.</p>
+            
+            <section class="application-summary">
+                <h3>Application Summary</h3>
+                <div class="summary-grid" id="application-data">
+                    <!-- Data will be populated by JavaScript -->
+                </div>
+            </section>
 
-        <article id="members-display" class="grid">
-        </article>
+            <section class="next-steps">
+                <h3>What Happens Next?</h3>
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <div class="step-content">
+                            <h4>Review Process</h4>
+                            <p>Our team will review your application within 2-3 business days.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <div class="step-content">
+                            <h4>Confirmation Email</h4>
+                            <p>You'll receive a confirmation email with membership details and payment instructions.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <div class="step-content">
+                            <h4>Welcome Package</h4>
+                            <p>Once approved, you'll receive your welcome package and access to member benefits.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="action-buttons">
+                <a href="index.html" class="btn btn-primary">Return to Home</a>
+                <a href="directory.html" class="btn btn-secondary">View Member Directory</a>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -93,6 +121,6 @@
     </footer>
 
     <script src="scripts/main.js"></script>
-    <script src="scripts/directory.js"></script>
+    <script src="scripts/thankyou.js"></script>
 </body>
 </html>

@@ -1,0 +1,267 @@
+/* ==========================================
+   DIRECTORY PAGE SPECIFIC STYLES
+   File: styles/directory.css
+   ========================================== */
+
+/* ==========================================
+   VIEW CONTROLS
+   ========================================== */
+.menu {
+    margin: 0 auto 2rem;
+    padding: 0.75rem;
+    background: var(--surface-color);
+    text-align: center;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.menu button {
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 2px solid var(--border-color);
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    margin: 0 0.5rem;
+}
+
+.menu button.active,
+.menu button:hover:not(.active) {
+    transform: translateY(-2px);
+}
+
+.menu button.active {
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+    color: #ffffff;
+    border-color: transparent;
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+.menu button:hover:not(.active) {
+    border-color: var(--secondary-color);
+}
+
+/* ==========================================
+   MEMBER CARDS BASE
+   ========================================== */
+#members-display section {
+    background: var(--surface-color);
+    border: none;
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+#members-display section h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+#members-display section a {
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+#members-display section a:hover {
+    color: var(--accent-color);
+}
+
+#members-display section img {
+    width: auto;
+    height: 100px;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* ==========================================
+   GRID VIEW
+   ========================================== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.grid .list-header {
+    display: none;
+}
+
+.grid section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.grid img {
+    margin: 0 auto 1rem;
+    padding: 0.5rem;
+    background: var(--background-color);
+}
+
+.grid .member-address,
+.grid .member-phone {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin: 0.25rem 0;
+}
+
+/* ==========================================
+   LIST VIEW
+   ========================================== */
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.list .list-header {
+    display: grid;
+    grid-template-columns: 3fr 3fr 1.5fr 2.5fr;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--primary-color), #2d5a7b);
+    padding: 1rem;
+    border-radius: var(--radius) var(--radius) 0 0;
+    margin-bottom: 0;
+}
+
+.list .list-header h3,
+.list .list-header p,
+.list .list-header a {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.list section:not(.list-header) {
+    display: grid;
+    grid-template-columns: 3fr 3fr 1.5fr 2.5fr;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid var(--border-color);
+    margin: 0;
+}
+
+.list section:not(.list-header):hover {
+    background: linear-gradient(90deg, rgba(255, 107, 53, 0.05), transparent);
+    transform: none;
+}
+
+.list section:not(.list-header) img,
+.list section:not(.list-header) .membership-badge {
+    display: none;
+}
+
+.list section:not(.list-header) h3,
+.list section:not(.list-header) p,
+.list section:not(.list-header) a {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.list section:not(.list-header) h3 {
+    font-size: 1rem;
+}
+
+.list section:not(.list-header) p,
+.list section:not(.list-header) a {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+}
+
+.list section:not(.list-header):nth-child(even) {
+    background-color: var(--background-color);
+}
+
+.list section:last-child {
+    border-radius: 0 0 var(--radius) var(--radius);
+}
+
+/* ==========================================
+   MEMBERSHIP BADGES
+   ========================================== */
+.membership-badge {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.membership-badge.gold {
+    background: linear-gradient(135deg, #ffd700, #ffed4e);
+    color: #1a1a1a;
+    box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+}
+
+.membership-badge.silver {
+    background: linear-gradient(135deg, #c0c0c0, #e8e8e8);
+    color: #1a1a1a;
+    box-shadow: 0 2px 8px rgba(192, 192, 192, 0.3);
+}
+
+.membership-badge.member {
+    background: linear-gradient(135deg, #4a90e2, #5aa3f0);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(74, 144, 226, 0.3);
+}
+
+/* ==========================================
+   LOADING & ERROR STATES
+   ========================================== */
+.loading,
+.error {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+
+.error {
+    color: #dc3545;
+}
+
+/* ==========================================
+   RESPONSIVE - TABLET (640px+)
+   ========================================== */
+@media screen and (min-width: 640px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ==========================================
+   RESPONSIVE - DESKTOP (768px+)
+   ========================================== */
+@media screen and (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ==========================================
+   RESPONSIVE - LARGE (1024px+)
+   ========================================== */
+@media screen and (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
