@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site plan for Youngmusic - A platform for hip-hop, R&B, and contemporary American music">
+    <meta name="author" content="Your Name">
+    <title>Youngmusic - Site Plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #E8E8E8;
+            background-color: #1A1A1A;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: #FF6B35;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 30px 0;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 40px;
+            border-bottom: 3px solid #FF6B35;
+            padding-bottom: 10px;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        p, li {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: #E8E8E8;
+        }
+
+        ul {
+            margin-left: 30px;
+        }
+
+        .section {
+            background-color: #2A2A2A;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            color: #E8E8E8;
+        }
+
+        .color-box {
+            display: inline-block;
+            width: 150px;
+            height: 100px;
+            margin: 10px 20px 10px 0;
+            border: 2px solid #E8E8E8;
+            border-radius: 5px;
+            vertical-align: top;
+        }
+
+        .color-primary {
+            background-color: #FF6B35;
+        }
+
+        .color-secondary {
+            background-color: #1A1A1A;
+        }
+
+        .color-accent {
+            background-color: #2A2A2A;
+        }
+
+        .color-text {
+            background-color: #E8E8E8;
+        }
+
+        .color-info {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 10px;
+            color: #E8E8E8;
+        }
+
+        .font-example {
+            padding: 15px;
+            background-color: #1A1A1A;
+            margin: 15px 0;
+            border-left: 4px solid #FF6B35;
+            border-radius: 4px;
+        }
+
+        .font-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        .font-body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.1rem;
+        }
+
+        .wireframe-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .wireframe {
+            background-color: #E8E8E8;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .wireframe h3 {
+            color: #1A1A1A;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .wireframe-content {
+            background-color: white;
+            border: 2px solid #2A2A2A;
+            padding: 15px;
+            min-height: 400px;
+        }
+
+        .wire-header {
+            background-color: #FF6B35;
+            color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .wire-nav {
+            background-color: #2A2A2A;
+            color: white;
+            padding: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .wire-hero {
+            background-color: #FFE5DD;
+            padding: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            border: 2px dashed #FF6B35;
+        }
+
+        .wire-content {
+            background-color: #F5F5F5;
+            padding: 20px;
+            margin-bottom: 15px;
+            min-height: 150px;
+        }
+
+        .wire-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .wire-card {
+            background-color: #E8E8E8;
+            border: 2px solid #2A2A2A;
+            padding: 15px;
+            min-height: 100px;
+        }
+
+        .wire-footer {
+            background-color: #2A2A2A;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .mobile-wireframe .wire-cards {
+            grid-template-columns: 1fr;
+        }
+
+        @media (max-width: 768px) {
+            .wireframe-container {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Youngmusic - Website Plan</h1>
+
+    <div class="section">
+        <h2>1. Site Name</h2>
+        <h3>Youngmusic</h3>
+        <p><strong>Reason for Selection:</strong> The name "Youngmusic" perfectly captures the contemporary, energetic spirit of modern American music genres like hip-hop and R&B. The name appeals directly to the youth culture that drives these musical movements and represents the fresh, evolving sound of today's music scene. "Young" conveys energy, innovation, and the cutting-edge nature of contemporary urban music, while "music" clearly identifies the site's focus. This simple, memorable name resonates with the target audience of music enthusiasts who are passionate about hip-hop, R&B, trap, and other modern American genres. The name suggests a platform that stays current with new releases, emerging artists, and trending sounds in urban music.</p>
+    </div>
+
+    <div class="section">
+        <h2>2. Site Purpose</h2>
+        <p>Youngmusic serves as a dedicated platform for fans of contemporary American music, specifically focusing on hip-hop, R&B, trap, soul, and related urban genres. The site provides an engaging hub where music enthusiasts can:</p>
+        <ul>
+            <li>Discover and explore a curated library of at least 15 hip-hop and R&B tracks with detailed information including title, artist, genre, and release year</li>
+            <li>Access extended details about each track through interactive modal dialogs, including album information, record label, producer credits, and additional metadata</li>
+            <li>Experience highlighted featured content on the home page showcasing trending songs, new releases, and notable beats from hip-hop and R&B artists</li>
+            <li>Learn about the platform's mission to celebrate American urban music culture, along with contact information through a dedicated About page</li>
+            <li>Submit inquiries, music suggestions, or feedback through an integrated contact form</li>
+            <li>Stay connected with the latest in hip-hop and R&B culture through a well-organized, visually appealing interface</li>
+        </ul>
+        <p>The platform celebrates the rich diversity of contemporary American music, from classic hip-hop to modern trap, from smooth R&B to neo-soul, providing an organized space for music discovery and appreciation within these genres.</p>
+    </div>
+
+    <div class="section">
+        <h2>3. Scenarios</h2>
+        <p>The following scenarios represent questions that target audience members might ask when visiting Youngmusic:</p>
+        
+        <h3>Scenario 1: Genre-Specific Discovery</h3>
+        <p><em>"I'm really into old-school hip-hop from the 90s and early 2000s. Can I find classic tracks on Youngmusic and filter the library to show only hip-hop from that era?"</em></p>
+        <p>This scenario addresses users who have specific preferences within American music genres and want to navigate the collection by both genre (hip-hop, R&B, trap) and time period. The library page should support filtering or organized display by these criteria.</p>
+        
+        <h3>Scenario 2: Artist and Track Details</h3>
+        <p><em>"I discovered a new R&B track on the library page that has an amazing sound. How can I learn more about the artist, the producer who made the beat, and what album this track is from?"</em></p>
+        <p>This scenario highlights the need for comprehensive information access through modal dialogs, allowing users to dive deep into track details including producer credits, album information, record label, and other metadata that's important to hip-hop and R&B fans.</p>
+        
+        <h3>Scenario 3: Music Suggestions and Contact</h3>
+        <p><em>"I know some underground hip-hop artists that would be perfect for this platform. How can I suggest music or get in touch with the site creator to share recommendations?"</em></p>
+        <p>This scenario emphasizes the importance of community engagement and accessible communication channels through the About page and contact form, allowing users to contribute to the platform's growth and music selection.</p>
+    </div>
+
+    <div class="section">
+        <h2>4. Color Scheme</h2>
+        <p>The color palette for Youngmusic creates a bold, modern aesthetic that reflects the energy and authenticity of hip-hop and R&B culture while maintaining excellent readability:</p>
+        
+        <div>
+            <div class="color-box color-primary"></div>
+            <div class="color-info">
+                <h3>Primary: Vibrant Orange (#FF6B35)</h3>
+                <p><strong>Usage:</strong> Headings, call-to-action buttons, links, hover states, active navigation items, section dividers, and accent elements. This energetic color represents the passion and vibrancy of urban music culture, drawing attention to important interactive elements and creating strong visual hierarchy.</p>
+            </div>
+        </div>
+
+        <div style="clear: both; margin-top: 20px;">
+            <div class="color-box color-secondary"></div>
+            <div class="color-info">
+                <h3>Secondary: Deep Charcoal (#1A1A1A)</h3>
+                <p><strong>Usage:</strong> Primary background color for the body, creating a dark, sleek foundation that gives the site a premium, modern feel. This color is commonly used in music streaming platforms and creates the perfect backdrop for album artwork and content to stand out.</p>
+            </div>
+        </div>
+
+        <div style="clear: both; margin-top: 20px;">
+            <div class="color-box color-accent"></div>
+            <div class="color-info">
+                <h3>Accent: Medium Gray (#2A2A2A)</h3>
+                <p><strong>Usage:</strong> Card backgrounds, section containers, navigation bar background, footer background, and content panel backgrounds. This creates depth and visual separation between elements while maintaining the sophisticated dark theme.</p>
+            </div>
+        </div>
+
+        <div style="clear: both; margin-top: 20px;">
+            <div class="color-box color-text"></div>
+            <div class="color-info">
+                <h3>Text: Light Gray (#E8E8E8)</h3>
+                <p><strong>Usage:</strong> Primary text color for body content, descriptions, track information, and general text. This provides excellent contrast against dark backgrounds while being comfortable for extended reading sessions.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>5. Typography</h2>
+        <p>Youngmusic uses a two-font system from Google Fonts that balances modern style with excellent readability:</p>
+        
+        <div class="font-example">
+            <p class="font-heading">Montserrat (Sans-Serif)</p>
+            <p><strong>Weights:</strong> Regular (400), Semi-Bold (600), Bold (700)</p>
+            <p><strong>Usage:</strong> All headings (h1, h2, h3), site title/logo, navigation links, button text, track titles, and any text that needs emphasis or hierarchy. Montserrat's bold, geometric design perfectly matches the confident, contemporary aesthetic of hip-hop and R&B culture.</p>
+        </div>
+
+        <div class="font-example">
+            <p class="font-body">Open Sans (Sans-Serif)</p>
+            <p><strong>Weights:</strong> Regular (400), Semi-Bold (600)</p>
+            <p><strong>Usage:</strong> Body text, paragraphs, descriptions, artist names, album information, form labels, modal content, and all general content. Open Sans offers excellent readability across all device sizes and maintains a clean, professional appearance.</p>
+        </div>
+
+        <p><strong>Font Pairing Rationale:</strong> This combination works effectively because Montserrat provides strong, attention-grabbing headlines that command presence (similar to album titles and artist names), while Open Sans ensures comfortable reading for longer descriptions and detailed track information. Both fonts are modern, clean, and widely supported across all devices and browsers.</p>
+    </div>
+
+    <div class="section">
+        <h2>6. Wireframes</h2>
+        <p>The following wireframes illustrate the home page layout for Youngmusic in both mobile and desktop views. These represent the structural layout and content hierarchy without final design details.</p>
+
+        <div class="wireframe-container">
+            <div class="wireframe mobile-wireframe">
+                <h3>Mobile View (320px - 767px)</h3>
+                <div class="wireframe-content">
+                    <div class="wire-header">YOUNGMUSIC LOGO</div>
+                    <div class="wire-nav">☰ MENU (Hamburger)</div>
+                    <div class="wire-hero">
+                        <strong>Hero Section</strong><br>
+                        Featured Album Art<br>
+                        "Discover Hip-Hop & R&B"
+                    </div>
+                    <div class="wire-content">
+                        <strong>Introduction Section</strong><br>
+                        Welcome to Youngmusic<br>
+                        Platform description<br>
+                        Featured genres
+                    </div>
+                    <div class="wire-cards">
+                        <div class="wire-card">Track 1<br>Cover Art<br>Title<br>Artist<br>Genre</div>
+                        <div class="wire-card">Track 2<br>Cover Art<br>Title<br>Artist<br>Genre</div>
+                        <div class="wire-card">Track 3<br>Cover Art<br>Title<br>Artist<br>Genre</div>
+                    </div>
+                    <div class="wire-content">
+                        <strong>Call-to-Action</strong><br>
+                        Browse Full Library Button
+                    </div>
+                    <div class="wire-footer">Footer: Navigation | Copyright | Video Link</div>
+                </div>
+            </div>
+
+            <div class="wireframe">
+                <h3>Desktop View (768px+)</h3>
+                <div class="wireframe-content">
+                    <div class="wire-header">YOUNGMUSIC LOGO | Navigation: Home - Library - About</div>
+                    <div class="wire-hero">
+                        <strong>Hero Banner Section</strong><br>
+                        Full-width Featured Image<br>
+                        "Your Hub for Hip-Hop & R&B"<br>
+                        Tagline
+                    </div>
+                    <div class="wire-content">
+                        <strong>About Section</strong><br>
+                        Two-column: Platform Description | Genre Focus (Hip-Hop, R&B, Trap, Soul)<br>
+                        Mission statement
+                    </div>
+                    <div class="wire-cards">
+                        <div class="wire-card">Featured Track 1<br>Album Art<br>Song Title<br>Artist Name<br>Genre</div>
+                        <div class="wire-card">Featured Track 2<br>Album Art<br>Song Title<br>Artist Name<br>Genre</div>
+                        <div class="wire-card">Featured Track 3<br>Album Art<br>Song Title<br>Artist Name<br>Genre</div>
+                    </div>
+                    <div class="wire-content" style="text-align: center;">
+                        <strong>Call-to-Action Section</strong><br>
+                        Explore Music Library Button | Learn More Button
+                    </div>
+                    <div class="wire-footer">Footer: Site Navigation | Social Links | Contact | Copyright | Video Link</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 30px;">Wireframe Notes:</h3>
+        <ul>
+            <li><strong>Mobile:</strong> Single-column vertical stack with hamburger navigation menu for optimal space usage on small screens</li>
+            <li><strong>Desktop:</strong> Horizontal navigation bar and three-column grid layout for featured tracks to maximize content visibility</li>
+            <li><strong>Responsive Breakpoint:</strong> Major layout shift occurs at 768px viewport width</li>
+            <li><strong>Key Elements:</strong> Hero section provides immediate visual impact with album artwork, featured tracks showcase current selections, clear CTAs guide users to the library</li>
+        </ul>
+    </div>
+
+</body>
+</html>
