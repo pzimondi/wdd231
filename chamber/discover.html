@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Discover Harare | Harare Chamber of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500;700&display=swap">
+
+    <meta name="description" content="Discover Harare's attractions, landmarks, and points of interest. Explore what makes Harare a great place for business and tourism.">
+    <meta name="author" content="Pastor Munashe Zimondi">
+    
+    <meta property="og:title" content="Discover Harare | Harare Chamber of Commerce">
+    <meta property="og:description" content="Discover Harare's attractions, landmarks, and points of interest. Explore what makes Harare a great place for business and tourism.">
+    <meta property="og:image" content="https://pzimondi.github.io/wdd231/chamber/images/harare-chamber-og.jpg">
+    <meta property="og:url" content="https://pzimondi.github.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website">
+    
+    <link rel="icon" href="images/favicon.ico">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/discover.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div>
+                <img src="images/logo.svg" alt="Harare Chamber of Commerce Logo" class="logo">
+                <h1 class="site-title">Harare Chamber of Commerce</h1>
+            </div>
+            
+            <nav>
+                <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html" class="active">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Discover Harare</h2>
+        
+        <!-- Visitor Message -->
+        <div id="visitor-message" class="visitor-message">
+            <p id="visit-text"></p>
+            <button id="close-message" aria-label="Close message">×</button>
+        </div>
+
+        <!-- Demographics Section -->
+        <section class="demographics">
+            <h3>About Harare</h3>
+            <div class="demo-grid">
+                <div class="demo-card">
+                    <h4>Population</h4>
+                    <p class="stat">1.5 Million+</p>
+                    <p class="description">Vibrant and growing metropolitan area</p>
+                </div>
+                <div class="demo-card">
+                    <h4>Climate</h4>
+                    <p class="stat">Subtropical</p>
+                    <p class="description">Pleasant weather year-round</p>
+                </div>
+                <div class="demo-card">
+                    <h4>Founded</h4>
+                    <p class="stat">1890</p>
+                    <p class="description">Rich history and heritage</p>
+                </div>
+                <div class="demo-card">
+                    <h4>Economy</h4>
+                    <p class="stat">Growing</p>
+                    <p class="description">Hub for business and innovation</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Attractions Gallery -->
+        <section class="attractions">
+            <h3>Points of Interest</h3>
+            <div id="attractions-grid" class="attractions-grid">
+                <!-- Cards will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Harare Chamber of Commerce</h3>
+                <p class="address">
+                    123 Nelson Mandela Avenue<br>
+                    Harare, Zimbabwe
+                </p>
+                <p class="email">Email: info@hararechamber.co.zw</p>
+                <p class="phone">Phone: +263 4 270 1000</p>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Youtube">
+                    <img src="images/youtube.svg" alt="Youtube" class="social-icon">
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+                    <img src="images/twitter-x.svg" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn" class="social-icon">
+                </a>
+            </div>
+
+            <div class="dev-info">
+                <p class="project-title">WDD 231 - Web Frontend Development</p>
+                <p class="author">Pastor Munashe Zimondi</p>
+                <p class="copyright">&copy; <span id="currentYear"></span> Harare Chamber of Commerce</p>
+                <p class="last-modified">Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script type="module" src="scripts/discover.js"></script>
+</body>
+</html>

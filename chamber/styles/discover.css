@@ -1,0 +1,414 @@
+/* ==========================================
+   DISCOVER PAGE SPECIFIC STYLES
+   File: styles/discover.css
+   ========================================== */
+
+/* ==========================================
+   VISITOR MESSAGE
+   ========================================== */
+.visitor-message {
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+    color: #ffffff;
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    animation: slideDown 0.5s ease;
+}
+
+.visitor-message.hidden {
+    display: none;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#visit-text {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    flex: 1;
+}
+
+#close-message {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+#close-message:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: rotate(90deg);
+}
+
+/* ==========================================
+   DEMOGRAPHICS SECTION
+   ========================================== */
+.demographics {
+    background: var(--surface-color);
+    padding: 2rem;
+    border-radius: var(--radius);
+    margin-bottom: 3rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.demographics h3 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+}
+
+.demo-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.demo-card {
+    background: var(--background-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    border-left: 4px solid var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.demo-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-left-color: var(--accent-color);
+}
+
+.demo-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.demo-card .stat {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin: 0.5rem 0;
+}
+
+.demo-card .description {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* ==========================================
+   ATTRACTIONS SECTION
+   ========================================== */
+.attractions {
+    margin-bottom: 2rem;
+}
+
+.attractions h3 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+}
+
+/* Mobile First: Single Column Layout with Named Grid Areas */
+.attractions-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+/* Assign grid areas to cards */
+.attraction-card:nth-child(1) { grid-area: card1; }
+.attraction-card:nth-child(2) { grid-area: card2; }
+.attraction-card:nth-child(3) { grid-area: card3; }
+.attraction-card:nth-child(4) { grid-area: card4; }
+.attraction-card:nth-child(5) { grid-area: card5; }
+.attraction-card:nth-child(6) { grid-area: card6; }
+.attraction-card:nth-child(7) { grid-area: card7; }
+.attraction-card:nth-child(8) { grid-area: card8; }
+
+/* Attraction Cards - Using Grid Template Areas */
+.attraction-card {
+    background: var(--surface-color);
+    border-radius: var(--radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    
+    /* Card Internal Grid Layout */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 1fr auto;
+    grid-template-areas:
+        "card-title"
+        "card-image"
+        "card-address"
+        "card-description"
+        "card-button";
+}
+
+.attraction-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.attraction-card h2 {
+    grid-area: card-title;
+    background: linear-gradient(135deg, var(--primary-color), #2d5a7b);
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    margin: 0;
+    font-size: 1.3rem;
+    border-radius: 0;
+    box-shadow: none;
+    text-align: left;
+}
+
+.attraction-card figure {
+    grid-area: card-image;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    background: var(--background-color);
+}
+
+.attraction-card figure img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+/* No hover effects on mobile */
+@media (pointer: coarse) {
+    .attraction-card figure img {
+        transition: none;
+    }
+}
+
+.attraction-card address {
+    grid-area: card-address;
+    font-style: normal;
+    padding: 1rem 1.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    border-bottom: 1px solid var(--border-color);
+    background: var(--background-color);
+}
+
+.attraction-card p {
+    grid-area: card-description;
+    padding: 1rem 1.5rem;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.attraction-card button {
+    grid-area: card-button;
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+    color: #ffffff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 1rem 1.5rem 1.5rem;
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
+}
+
+.attraction-card button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.5);
+}
+
+/* ==========================================
+   LOADING STATE
+   ========================================== */
+.loading {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+
+/* ==========================================
+   RESPONSIVE - TABLET (641px to 1024px)
+   ========================================== */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .demo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Medium Screen: Single Column with Named Grid Areas */
+    .attractions-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5"
+            "card6"
+            "card7"
+            "card8";
+    }
+
+    .attraction-card:nth-child(1) { grid-area: card1; }
+    .attraction-card:nth-child(2) { grid-area: card2; }
+    .attraction-card:nth-child(3) { grid-area: card3; }
+    .attraction-card:nth-child(4) { grid-area: card4; }
+    .attraction-card:nth-child(5) { grid-area: card5; }
+    .attraction-card:nth-child(6) { grid-area: card6; }
+    .attraction-card:nth-child(7) { grid-area: card7; }
+    .attraction-card:nth-child(8) { grid-area: card8; }
+
+    /* Adjust card layout for tablet - horizontal orientation */
+    .attraction-card {
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: auto 1fr auto auto;
+        grid-template-areas:
+            "card-title card-title"
+            "card-image card-description"
+            "card-image card-address"
+            "card-image card-button";
+    }
+
+    .attraction-card figure img {
+        height: 100%;
+        min-height: 250px;
+    }
+
+    /* Add hover effects for non-touch devices */
+    @media (pointer: fine) {
+        .attraction-card figure img:hover {
+            transform: scale(1.1);
+            filter: brightness(1.1);
+        }
+    }
+}
+
+/* ==========================================
+   RESPONSIVE - DESKTOP (1025px+)
+   ========================================== */
+@media screen and (min-width: 1025px) {
+    .demo-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Large Screen: Two-Column Grid with Horizontal Cards */
+    .attractions-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 1.5rem;
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+
+    .attraction-card:nth-child(1) { grid-area: card1; }
+    .attraction-card:nth-child(2) { grid-area: card2; }
+    .attraction-card:nth-child(3) { grid-area: card3; }
+    .attraction-card:nth-child(4) { grid-area: card4; }
+    .attraction-card:nth-child(5) { grid-area: card5; }
+    .attraction-card:nth-child(6) { grid-area: card6; }
+    .attraction-card:nth-child(7) { grid-area: card7; }
+    .attraction-card:nth-child(8) { grid-area: card8; }
+
+    /* All cards use horizontal layout with image on LEFT */
+    .attraction-card {
+        grid-template-columns: 240px 1fr;
+        grid-template-rows: auto 1fr auto auto;
+        grid-template-areas:
+            "card-title card-title"
+            "card-image card-description"
+            "card-image card-address"
+            "card-image card-button";
+    }
+
+    .attraction-card figure img {
+        height: 100%;
+        min-height: 200px;
+        max-height: 300px;
+    }
+
+    /* Adjust padding for better spacing */
+    .attraction-card p,
+    .attraction-card address {
+        padding: 0.75rem 1.5rem;
+    }
+
+    .attraction-card button {
+        margin: 0.75rem 1.5rem 1.5rem;
+    }
+
+    /* Add hover effects for non-touch devices */
+    @media (pointer: fine) {
+        .attraction-card figure img:hover {
+            transform: scale(1.1);
+            filter: brightness(1.15) contrast(1.05);
+        }
+
+        /* Additional hover effect on figure */
+        .attraction-card figure::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.3), rgba(255, 166, 0, 0.3));
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            pointer-events: none;
+        }
+
+        .attraction-card figure:hover::after {
+            opacity: 1;
+        }
+    }
+}
