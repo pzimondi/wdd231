@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Youngmusic's mission to celebrate contemporary American music culture. Contact us for music suggestions and inquiries.">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="About Youngmusic">
+    <meta property="og:description" content="Discover our mission and get in touch with us.">
+    <meta property="og:type" content="website">
+    <title>About | Youngmusic</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/about.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>YOUNGMUSIC</h1>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="library.html">Library</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <h2>About Youngmusic</h2>
+            <p>Celebrating the pulse of contemporary American music</p>
+        </section>
+
+        <section class="mission">
+            <div class="mission-container">
+                <div class="mission-content">
+                    <h2>Our Mission</h2>
+                    <p>Youngmusic is dedicated to celebrating and preserving the rich heritage of contemporary American music, with a special focus on hip-hop, R&B, trap, and soul. We believe that music is more than just entertainment—it's a cultural force that shapes identities, tells stories, and brings communities together.</p>
+                    <p>Our platform serves as a hub for music enthusiasts to discover, explore, and appreciate the artistry behind the beats that define our generation. From classic hip-hop legends to emerging trap artists, from smooth R&B crooners to neo-soul innovators, we showcase the diversity and creativity that makes American urban music so powerful.</p>
+                    <p>Whether you're a longtime fan or just beginning your musical journey, Youngmusic provides a curated space to engage with the music that matters.</p>
+                </div>
+                <div class="mission-image">
+                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600" alt="Music studio setup" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="values">
+            <h2>What We Offer</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Curated Library</h3>
+                    <p>Access a carefully selected collection of tracks spanning multiple decades of hip-hop, R&B, trap, and soul music, each with detailed information about artists, albums, and producers.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Detailed Information</h3>
+                    <p>Learn about the stories behind your favorite tracks, including producer credits, record labels, release years, and album details that give context to the music.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Easy Discovery</h3>
+                    <p>Filter by genre, sort by year or artist, and explore tracks through an intuitive interface designed to make music discovery enjoyable and effortless.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact-container">
+                <h2>Get In Touch</h2>
+                <p>Have music suggestions? Want to share feedback? We'd love to hear from you!</p>
+                
+                <form id="contact-form" action="thank-you.html" method="GET">
+                    <div class="form-group">
+                        <label for="name">Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required minlength="2">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject <span class="required">*</span></label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="music-suggestion">Music Suggestion</option>
+                            <option value="feedback">General Feedback</option>
+                            <option value="question">Question</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="6" required minlength="10"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="library.html">Library</a>
+                <a href="about.html">About</a>
+                <a href="attributions.html">Attributions</a>
+            </nav>
+            <div class="footer-info">
+                <p>&copy; <span id="current-year"></span> Youngmusic. All rights reserved.</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+            <div class="footer-links">
+                <a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank">Project Video</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/about.js" type="module"></script>
+</body>
+</html>

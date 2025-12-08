@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for contacting Youngmusic">
+    <meta name="author" content="Your Name">
+    <title>Thank You | Youngmusic</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/thank-you.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>YOUNGMUSIC</h1>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="library.html">Library</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="thank-you-container">
+            <div class="thank-you-content">
+                <h2>Thank You!</h2>
+                <p class="success-message">Your message has been received successfully.</p>
+                
+                <div class="submission-details" id="submission-details">
+                    <h3>Submission Details:</h3>
+                    <!-- Details will be populated by JavaScript -->
+                </div>
+
+                <div class="actions">
+                    <a href="index.html" class="btn-primary">Return to Home</a>
+                    <a href="library.html" class="btn-secondary">Browse Library</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="library.html">Library</a>
+                <a href="about.html">About</a>
+                <a href="attributions.html">Attributions</a>
+            </nav>
+            <div class="footer-info">
+                <p>&copy; <span id="current-year"></span> Youngmusic. All rights reserved.</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+            <div class="footer-links">
+                <a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank">Project Video</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/thank-you.js" type="module"></script>
+</body>
+</html>

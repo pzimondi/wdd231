@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Youngmusic - Your hub for discovering hip-hop, R&B, trap, and contemporary American music. Explore curated tracks and beats from top artists.">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Youngmusic - Hip-Hop & R&B Music Hub">
+    <meta property="og:description" content="Discover and explore curated hip-hop and R&B tracks with detailed information.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yoursite.com">
+    <title>Youngmusic - Home | Hip-Hop & R&B Music Hub</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>YOUNGMUSIC</h1>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="library.html">Library</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Your Hub for Hip-Hop & R&B</h2>
+                <p>Discover the beats that move a generation</p>
+            </div>
+        </section>
+
+        <section class="intro">
+            <div class="intro-container">
+                <div class="intro-text">
+                    <h2>Welcome to Youngmusic</h2>
+                    <p>Experience the vibrant world of contemporary American music. From classic hip-hop to modern trap, from smooth R&B to neo-soul, we celebrate the diversity and creativity of urban music culture.</p>
+                </div>
+                <div class="intro-genres">
+                    <h3>Featured Genres</h3>
+                    <ul>
+                        <li>Hip-Hop</li>
+                        <li>R&B</li>
+                        <li>Trap</li>
+                        <li>Soul</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-tracks">
+            <h2>Featured Tracks</h2>
+            <div class="tracks-grid" id="featured-tracks">
+                <!-- Dynamically loaded featured tracks -->
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Ready to Explore?</h2>
+            <p>Browse our complete collection of hip-hop and R&B tracks</p>
+            <a href="library.html" class="btn-primary">Explore Music Library</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="library.html">Library</a>
+                <a href="about.html">About</a>
+            </nav>
+            <div class="footer-info">
+                <p>&copy; <span id="current-year"></span> Youngmusic. All rights reserved.</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+            <div class="footer-links">
+                <a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank">Project Video</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/index.js" type="module"></script>
+</body>
+</html>
