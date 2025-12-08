@@ -9,7 +9,7 @@ export const tracks = [
         label: "Shady Records",
         producer: "Eminem, Jeff Bass, Luis Resto",
         duration: "5:26",
-        image: "../images/eminem.jpeg"
+        image: "./images/eminem.jpeg"
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ export const tracks = [
         label: "Top Dawg Entertainment",
         producer: "Pharrell Williams, Sounwave",
         duration: "3:39",
-        image: "../images/kendrik-lamar.jpeg"
+        image: "./images/kendrik-lamar.jpeg"
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ export const tracks = [
         label: "LaFace Records",
         producer: "Kevin 'She'kspere' Briggs",
         duration: "3:35",
-        image: "../images/tlc.jpeg"
+        image: "./images/tlc.jpeg"
     },
     {
         id: 4,
@@ -45,7 +45,7 @@ export const tracks = [
         label: "Epic Records",
         producer: "Hit-Boy, Tay Keith, Mike Dean",
         duration: "5:13",
-        image: "../images/travis-scott.jpeg"
+        image: "./images/travis-scott.jpeg"
     },
     {
         id: 5,
@@ -57,7 +57,7 @@ export const tracks = [
         label: "Glassnote Records",
         producer: "Ludwig Göransson",
         duration: "5:27",
-        image: "../images/childish-gambino.jpeg"
+        image: "./images/childish-gambino.jpeg"
     },
     {
         id: 6,
@@ -69,7 +69,7 @@ export const tracks = [
         label: "Bad Boy Records",
         producer: "Poke, Sean Combs",
         duration: "5:03",
-        image: "../images/big.jpeg"
+        image: "./images/big.jpeg"
     },
     {
         id: 7,
@@ -81,7 +81,7 @@ export const tracks = [
         label: "Columbia Records",
         producer: "Rich Harrison",
         duration: "3:56",
-        image: "../images/beyonce.jpeg"
+        image: "./images/beyonce.jpeg"
     },
     {
         id: 8,
@@ -93,7 +93,7 @@ export const tracks = [
         label: "Top Dawg Entertainment",
         producer: "Mike Will Made-It",
         duration: "2:57",
-        image: "../images/humble.jpeg"
+        image: "./images/humble.jpeg"
     },
     {
         id: 9,
@@ -105,7 +105,7 @@ export const tracks = [
         label: "Epic Records",
         producer: "Metro Boomin",
         duration: "3:24",
-        image: "../images/future.jpeg"
+        image: "./images/future.jpeg"
     },
     {
         id: 10,
@@ -117,7 +117,7 @@ export const tracks = [
         label: "Virgin Records",
         producer: "D'Angelo, Raphael Saadiq",
         duration: "7:10",
-        image: "../images/d-angelo.jpeg"
+        image: "./images/d-angelo.jpeg"
     },
     {
         id: 11,
@@ -129,7 +129,7 @@ export const tracks = [
         label: "Columbia Records",
         producer: "YoungKio",
         duration: "2:37",
-        image: "../images/lil-nas.jpeg"
+        image: "./images/lil-nas.jpeg"
     },
     {
         id: 12,
@@ -141,7 +141,7 @@ export const tracks = [
         label: "RCA Records",
         producer: "Miguel",
         duration: "3:19",
-        image: "../images/miguel.jpeg"
+        image: "./images/miguel.jpeg"
     },
     {
         id: 13,
@@ -153,7 +153,7 @@ export const tracks = [
         label: "Young Money Entertainment",
         producer: "Cardo, Yung Exclusive, Boi-1da",
         duration: "3:19",
-        image: "../images/drake.jpeg"
+        image: "./images/drake.jpeg"
     },
     {
         id: 14,
@@ -165,7 +165,7 @@ export const tracks = [
         label: "Atlantic Records",
         producer: "TM88, JW Lucas",
         duration: "3:03",
-        image: "../images/lil-vert.jpeg"
+        image: "./images/lil-vert.jpeg"
     },
     {
         id: 15,
@@ -177,7 +177,7 @@ export const tracks = [
         label: "Def Jam Recordings",
         producer: "Shea Taylor",
         duration: "3:21",
-        image: "../images/frank-ocean.jpeg"
+        image: "./images/frank-ocean.jpeg"
     },
     {
         id: 16,
@@ -189,7 +189,7 @@ export const tracks = [
         label: "Cash Money Records",
         producer: "Nineteen85",
         duration: "4:27",
-        image: "../images/drake2.jpeg"
+        image: "./images/drake2.jpeg"
     },
     {
         id: 17,
@@ -201,7 +201,7 @@ export const tracks = [
         label: "Atlantic Records",
         producer: "30 Roc, Dat Boi Squeeze",
         duration: "3:16",
-        image: "../images/roddy-ricch.jpeg"
+        image: "./images/roddy-ricch.jpeg"
     },
     {
         id: 18,
@@ -213,6 +213,6 @@ export const tracks = [
         label: "Golden Child Recordings",
         producer: "Jordan Evans, Matthew Burnett",
         duration: "3:30",
-        image: "../images/her.jpeg"
+        image: "./images/her.jpeg"
     }
 ];
