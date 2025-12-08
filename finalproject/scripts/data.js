@@ -9,7 +9,7 @@ export const tracks = [
         label: "Shady Records",
         producer: "Eminem, Jeff Bass, Luis Resto",
         duration: "5:26",
-        image: "../images/eminem.jpeg"
+        image: "/images/eminem.jpeg"
     },
     {
         id: 2,
