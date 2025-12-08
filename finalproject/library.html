@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Browse our complete library of 18+ hip-hop and R&B tracks with detailed information including artist, genre, year, and album details.">
-    <meta name="author" content="Your Name">
-    <meta property="og:title" content="Music Library - Youngmusic">
-    <meta property="og:description" content="Explore our curated collection of hip-hop and R&B music.">
+    <meta name="author" content="Pastor Zimondi">
+    <meta property="og:title" content="Music Library - Explore Hip-Hop and R&B Tracks">
+    <meta property="og:description" content="Browse our complete collection of 18+ hip-hop and R&B tracks with detailed information including artist, genre, year, album, and producer details.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pzimondi.github.io/wdd231/finalproject/library.html">
+    <meta property="og:image" content="https://pzimondi.github.io/wdd231/finalproject/images/og-image.jpg">
     <title>Music Library | Youngmusic</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/library.css">
 </head>
 <body>
@@ -71,8 +74,8 @@
     </main>
 
     <!-- Modal Dialog -->
-    <div id="track-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-        <div class="modal-content">
+    <div id="track-modal" class="modal">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
             <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
             <div class="modal-body" id="modal-body">
                 <!-- Modal content dynamically inserted here -->
@@ -93,7 +96,7 @@
                 <p>Last Modified: <span id="last-modified"></span></p>
             </div>
             <div class="footer-links">
-                <a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank">Project Video</a>
+                <a href="https://drive.google.com/file/d/1ZEgSXtzwkWZVD8SWQy2bMpryYny9UEXO/view?usp=drive_link" target="_blank">Project Video</a>
             </div>
         </div>
     </footer>
